@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+
+<a onclick="d()"> kick me </a>
+
+<div id="first" style="background-color:#0F3">
+<script>
+function d()
+{
+	
+	document.getElementById("footer").innerHTML=Date();
+}
+
+</script>
+</div>
+</br>
+<div id="second" style="background-color:#C6F;width:300px;height:500px">
+<img id="imgone" onclick="a()" src="starone.jpg" />
+<script>
+function a(){
+	var image= document.getElementById('imgone');
+	if(image.src.match("two")){
+		image.src="starone.jpg";
+	}
+		else
+		{
+			
+			image.src="startwo.png";
+}
+}
+</script>
+</div>
+<div id="third">
+<p id="para"> I am Sanjeevini Rao</p>
+</div>
+<div id="footer">
+
+</div>
+<script>
+var x= document.getElementById('para');
+x.style.fontSize="40px";
+x.style.color="red";
+
+
+</script>
+<div id="fourth" style="background-color:#FF6;width:400px;height:200px">
+
+enter value between 1 to 10<input id="one" type="text" /> </br>
+<input type="submit" onclick="c()"/>
+<p id="p2" ></p>
+<script>
+var y;
+function c(){
+	var q = document.getElementById('one').value;
+	alert(q)
+	if((q>1)&&(q<10))
+	{
+		 y= "Okay ";
+	}
+	else
+	{
+		 y= "Not okay";
+	}
+	
+	document.getElementById('p2').innerHTML= y;
+	}
+	
+	
+
+
+</script>
+</div>
+<div id
+
+</body>
+</html>
